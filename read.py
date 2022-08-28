@@ -8,9 +8,12 @@ with open('reviews.txt', 'r', encoding='utf-8') as f:
             print(len(data))
             
         
-print(len(data))
+print('檔案讀取完畢，共有:', len(data), '筆資料')
 
-print(data[0])
-print('----------')
-print(data[1])
-
+# 求平均留言數量
+sum_len = 0
+for d in data:
+    sum_len += len(d)
+    # print(sum_len)
+print(sum_len)
+print(sum_len / len(data))
