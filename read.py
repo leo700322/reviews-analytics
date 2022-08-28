@@ -1,3 +1,4 @@
+# 從 reviews.txt 檔案內取出資料，這邊設定為 data，每取出一筆就計數一次(計數設定為 count)
 data = []
 count = 0
 with open('reviews.txt', 'r', encoding='utf-8') as f:
